@@ -1,0 +1,24 @@
+meta {
+  name: Itemsp
+  type: http
+  seq: 6
+}
+
+post {
+  url: https://api.kitek-pg.ru/api/marketplace/items
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE3OTQ2MzU5NDEyOTQsInVzZXJuYW1lIjoidmljcnJyIiwiaWF0IjoxNzk0NjM1OTQxLCJleHAiOjE3OTQ3MjIzNDF9.PpwFO6bsfMMYyQaY5dgwux_jVKgoJSsKa3TaEw-RkFU
+}
+
+body:json {
+  {
+    "title": "Тимофей 3.0",
+    "description": "Продаем по новой(3 раз, предыдущие 2 владельца отказались от него спустя 10 секунд)",
+    "price": 1,
+    "imageUrl": "https://example.com/timofey.jpg"
+  }
+}
